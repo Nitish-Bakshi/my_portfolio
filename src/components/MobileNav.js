@@ -29,7 +29,7 @@ const MobileNav = () => {
         onClick={() => {
           setOpenMenu(true);
         }}
-        className=" text-3xl cursor-pointer absolute right-0 top-5  w-14 h-14 flex items-center justify-center"
+        className=" text-3xl cursor-pointer absolute right-10 top-5  w-14 h-14 flex items-center justify-center lg:right-[100px] lg:top-10"
       >
         <CgMenuRight />
       </div>
