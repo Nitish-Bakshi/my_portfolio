@@ -12,7 +12,7 @@ const Header = () => {
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/*    logo   */}
         <Link to={"/"} className="max-w-[200px]">
-          <img className="w-[200px] h-[200px]" src={Logo} alt="" />
+          <img src={Logo} alt="" />
         </Link>
         {/* nav will be initially hidden and only will be visible in desktop mode  */}
         <nav className="hidden lg:flex gap-x-12 font-semibold">

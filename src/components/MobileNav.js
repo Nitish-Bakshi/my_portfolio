@@ -29,7 +29,7 @@ const MobileNav = () => {
         onClick={() => {
           setOpenMenu(true);
         }}
-        className=" text-3xl cursor-pointer"
+        className=" text-3xl cursor-pointer absolute right-0 top-5  w-14 h-14 flex items-center justify-center"
       >
         <CgMenuRight />
       </div>
@@ -41,7 +41,12 @@ const MobileNav = () => {
         className="bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 "
       >
         {/* icon */}
-        <div className="text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer">
+        <div
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+          className="text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer"
+        >
           <IoMdClose />
         </div>
         {/* menu list */}
