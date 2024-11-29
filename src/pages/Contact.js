@@ -6,7 +6,9 @@ const Contact = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col justify-start items-center h-full lg:flex-row pt-36 gap-x-8 text-center lg:text-left">
           {/* bg */}
-          <div>bg</div>
+          <div className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10">
+            bg
+          </div>
           {/* text and form */}
           <div className="lg:flex-1 lg:pt-32 px-4">
             <h1 className="h1">Conatct me</h1>
