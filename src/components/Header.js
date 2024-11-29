@@ -12,11 +12,9 @@ const Header = () => {
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/*    logo   */}
         <Link to={"/"} className="max-w-[200px]">
-          <img
-            src={Logo}
-            className="w-[150px] h-[150px] overflow-hidden"
-            alt=""
-          />
+          <h1 className="text-primary font-primary text-3xl font-extrabold hover:text-white hover:bg-primary border-2 border-solid border-primary w-[120px] p-3">
+            Nitish.
+          </h1>
         </Link>
         {/* nav will be initially hidden and only will be visible in desktop mode  */}
         <div className="flex">
