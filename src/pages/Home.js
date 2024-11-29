@@ -1,6 +1,6 @@
 import React from "react";
 // import images
-import WomanImg from "../img/home/man.png";
+import ManImg from "../img/home/man.png";
 // import Link
 import { Link } from "react-router-dom";
 
@@ -24,8 +24,8 @@ const Home = () => {
           </div>
           {/* img */}
           <div className="flex justify-end max-h-96 lg:max-h-max items-center">
-            <div className="relative h-[50%] sm:max-h-[60%] lg:h-full bottom-[50px] sm:bottom-[150px] lg:-right-40 lg:w-[65%] w-[100%] lg:bottom-20 overflow-hidden object-contain mx-0 ">
-              <img src={WomanImg} alt="" />
+            <div className="relative h-[100%]  lg:h-full bottom-[50px] sm:bottom-[150px] lg:-right-40 lg:w-[65%] w-[100%] lg:bottom-20 overflow-hidden object-contain mx-0 ">
+              <img src={ManImg} alt="" />
             </div>
           </div>
         </div>
