@@ -1,31 +1,33 @@
 import React from "react";
 // import images
-import ManImg from "../img/home/man.png";
+// import links
+import meImg from "../img/home/me.png";
 // import Link
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="section">
+    <section className="section ">
       <div className="container mx-auto h-full relative">
-        {/* text and img wrapper */}
-        <div className="flex flex-col justify-center mx-10 sm:mx-20">
+        {/* text & image wrapper*/}
+        <div className="flex flex-col justify-center ">
           {/* text */}
-          <div className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start top-[180px] left-[-10px]">
-            <h1 className="h1 text-center lg:text-left">
-              Web Developer <br /> & Designer{" "}
+          <div className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start">
+            <h1 className="h1">
+              web developer
+              <br />& Designer
             </h1>
             <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
-              from india
+              India
             </p>
-            <Link to={"/contact"} className="btn mb-[30px]">
+            <Link to={"/contact"} className="btn mb-[30px] ">
               hire me
             </Link>
           </div>
-          {/* img */}
-          <div className="flex justify-end max-h-96 lg:max-h-max items-center">
-            <div className="relative h-[100%]  lg:h-full bottom-[50px] sm:bottom-[150px] lg:-right-40 lg:w-[65%] w-[100%] lg:bottom-20 overflow-hidden object-contain mx-0 ">
-              <img src={ManImg} alt="" />
+          {/* image */}
+          <div className="flex justify-end max-h-96 lg:max-h-max">
+            <div className="relative lg:-right-40 overflow-hidden">
+              <img className="w-[390] h-[531]" src={meImg} alt="woman" />
             </div>
           </div>
         </div>
@@ -33,4 +35,5 @@ const Home = () => {
     </section>
   );
 };
+
 export default Home;
