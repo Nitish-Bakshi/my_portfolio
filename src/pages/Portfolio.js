@@ -20,7 +20,7 @@ const angular = (delay) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.2,
       delay: delay,
     },
   },
@@ -29,7 +29,7 @@ const angular = (delay) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 1.2,
       delay: delay,
     },
   },
@@ -50,7 +50,7 @@ const horizontal = (delay) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.8,
       delay: delay,
     },
   },
@@ -59,7 +59,7 @@ const horizontal = (delay) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
       delay: delay,
     },
   },
@@ -67,21 +67,13 @@ const horizontal = (delay) => ({
 const vertical = (delay) => ({
   centerup: {
     opacity: 0,
-    y: 100,
+    y: -100,
     x: 0,
-    transition: {
-      duration: 0.6,
-      delay: delay,
-    },
   },
   centerdown: {
     opacity: 0,
-    y: -100,
+    y: 100,
     x: 0,
-    transition: {
-      duration: 0.8,
-      delay: delay,
-    },
   },
   show5: {
     opacity: 1,
@@ -97,17 +89,18 @@ const vertical = (delay) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 1,
       delay: delay,
     },
   },
 });
+
 const Portfolio = () => {
   return (
     <section className="section ">
       <div className="container mx-auto h-full relative flex flex-col justify-center items-center">
-        <div className="my-4 sm:my-6 md:my-8 lg:my-12 xl:my-14">
-          <h1 className="h1 ">My Portfolio</h1>
+        <div className="my-4 sm:my-6 md:my-8 lg:my-12 xl:my-14 h-[20%]">
+          <h1 className="h1 ">Recent Work</h1>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full h-[60%]">
@@ -115,7 +108,7 @@ const Portfolio = () => {
             variants={angular(0.2)}
             initial="leftupcorner"
             whileInView="show1"
-            className="block bg-blue-500"
+            className="block bg-[#dbedff] hover:scale-[1.05]"
           >
             Item 1
           </motion.div>
@@ -123,7 +116,7 @@ const Portfolio = () => {
             variants={vertical(0.4)}
             initial="centerup"
             whileInView="show5"
-            className="block bg-green-500"
+            className="block bg-[#dbedff]"
           >
             Item 2
           </motion.div>
@@ -131,7 +124,7 @@ const Portfolio = () => {
             variants={horizontal(0.6)}
             initial="rightupcorner"
             whileInView="show4"
-            className="block bg-red-500"
+            className="block bg-[#dbedff]"
           >
             Item 3
           </motion.div>
@@ -139,15 +132,15 @@ const Portfolio = () => {
             variants={horizontal(0.8)}
             initial="leftdowncorner"
             whileInView="show3"
-            className="block bg-yellow-500"
+            className="block bg-[#dbedff]"
           >
             Item 4
           </motion.div>
           <motion.div
             variants={vertical(1)}
-            initial="centerup"
+            initial="centerdown"
             whileInView="show6"
-            className="block bg-purple-500"
+            className="block bg-[#dbedff]"
           >
             Item 5
           </motion.div>
@@ -155,7 +148,7 @@ const Portfolio = () => {
             variants={angular(1.2)}
             initial="rightdowncorner"
             whileInView="show2"
-            className="block bg-pink-500"
+            className="block bg-[#dbedff]"
           >
             Item 6
           </motion.div>
