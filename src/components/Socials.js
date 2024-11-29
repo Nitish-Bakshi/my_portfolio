@@ -7,12 +7,20 @@ const Socials = () => {
     <div className="hidden xl:flex ml-24">
       <ul className="flex gap-x-4 items-center">
         <li>
-          <a href="https://www.twitter.com/nitishbakshi001" target="_blank">
+          <a
+            href="https://www.twitter.com/nitishbakshi001"
+            target="_blank"
+            rel="noreferrer"
+          >
             <ImTwitter />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/nitishbakshi001" target="_blank">
+          <a
+            href="https://www.instagram.com/nitishbakshi001"
+            target="_blank"
+            rel="noreferrer"
+          >
             <ImInstagram />
           </a>
         </li>
@@ -21,6 +29,7 @@ const Socials = () => {
             href="https://www.linkedin.com/in/nitish-bakshi-b2368a271
 "
             target="_blank"
+            rel="noreferrer"
           >
             <ImLinkedin />
           </a>
@@ -30,6 +39,7 @@ const Socials = () => {
             href="https://www.github.com/Nitish-Bakshi
 "
             target="_blank"
+            rel="noreferrer"
           >
             <ImGithub />
           </a>

@@ -2,7 +2,6 @@ import React from "react";
 // import motions
 import { motion } from "motion/react";
 // import links
-import { Link } from "react-router-dom";
 
 const angular = (delay) => ({
   leftupcorner: {

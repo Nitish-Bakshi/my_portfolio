@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import MobileNav from "./MobileNav";
 
-import Logo from "../img/header/logo.png";
-
 const Header = () => {
   return (
     <header className="fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
