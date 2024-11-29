@@ -9,9 +9,9 @@ const Home = () => {
     <section className="section">
       <div className="container mx-auto h-full relative">
         {/* text and img wrapper */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center mx-20">
           {/* text */}
-          <div className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start top-[180px]">
+          <div className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start top-[180px] left-[-10px]">
             <h1 className="h1">
               Web Developer <br /> & Designer{" "}
             </h1>
