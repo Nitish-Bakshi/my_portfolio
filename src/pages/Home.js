@@ -47,9 +47,20 @@ const Home = () => {
           {/* image */}
 
           <div className="flex justify-end max-h-96 lg:max-h-max">
-            <div className="relative lg:-right-40 overflow-hidden">
-              <img src={meImg} alt="man" />
-            </div>
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0 }}
+              transition={transition1}
+              className="relative lg:-right-40 overflow-hidden"
+            >
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                transition={transition1}
+                src={meImg}
+                alt="man"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
