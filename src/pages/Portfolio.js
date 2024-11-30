@@ -1,8 +1,6 @@
 import React from "react";
 // import motions
 import { motion } from "motion/react";
-// import links
-import { Link } from "react-router-dom";
 
 const angular = (delay) => ({
   leftupcorner: {
@@ -99,11 +97,11 @@ const Portfolio = () => {
   return (
     <section className="section ">
       <div className="container mx-auto h-full relative flex flex-col justify-center items-center">
-        <div className="my-4 sm:my-6 md:my-8 lg:my-12 xl:my-14 h-[20%]">
-          <h1 className="h1 ">Recent Work</h1>
+        <div className="my-4 sm:my-6 md:my-8 lg:my-12 xl:my-14 h-[20%] ">
+          <h1 className="h1 myheading">Recent Work</h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full h-[60%]">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full h-3/5">
           <motion.div
             variants={angular(0.2)}
             initial="leftupcorner"
