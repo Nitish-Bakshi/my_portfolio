@@ -9,10 +9,9 @@ import Portfolio from "../pages/Portfolio";
 
 const AnimRoutes = () => {
   const location = useLocation();
-
   return (
     <AnimatePresence initial={true} mode="wait">
-      <Routes location={location} key={location.pathname}>
+      <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />

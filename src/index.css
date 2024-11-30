@@ -17,5 +17,6 @@
   }
 }
 .block {
-  border-radius: 5px;
+  min-height: 30vh;
+  border-radius: 10px;
 }
